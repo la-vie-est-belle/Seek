@@ -1,0 +1,76 @@
+{
+  "ver": "2.1.4",
+  "importer": "gltf",
+  "imported": true,
+  "uuid": "66435d3d-71ad-4add-ab33-e3f5c9ec4bb1",
+  "files": [],
+  "subMetas": {
+    "31539": {
+      "importer": "gltf-scene",
+      "uuid": "66435d3d-71ad-4add-ab33-e3f5c9ec4bb1@31539",
+      "displayName": "",
+      "id": "31539",
+      "name": "7.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "65559": {
+      "importer": "gltf-mesh",
+      "uuid": "66435d3d-71ad-4add-ab33-e3f5c9ec4bb1@65559",
+      "displayName": "",
+      "id": "65559",
+      "name": "Cube.021.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ffc60": {
+      "importer": "gltf-mesh",
+      "uuid": "66435d3d-71ad-4add-ab33-e3f5c9ec4bb1@ffc60",
+      "displayName": "",
+      "id": "ffc60",
+      "name": "Text.013.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "legacyFbxImporter": false,
+    "redirect": "66435d3d-71ad-4add-ab33-e3f5c9ec4bb1@31539",
+    "assetFinder": {
+      "meshes": [
+        "66435d3d-71ad-4add-ab33-e3f5c9ec4bb1@65559",
+        "66435d3d-71ad-4add-ab33-e3f5c9ec4bb1@ffc60"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "66435d3d-71ad-4add-ab33-e3f5c9ec4bb1@31539"
+      ]
+    }
+  }
+}
