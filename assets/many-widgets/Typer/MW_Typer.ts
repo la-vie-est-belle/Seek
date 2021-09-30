@@ -1,4 +1,5 @@
-import { _decorator, Component, Label, CCFloat } from 'cc';
+import { _decorator, Component, Label, CCFloat, AudioClip, Game, AudioSource } from 'cc';
+import { GameManager } from '../../script/GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('MWTyper')
@@ -9,6 +10,7 @@ export class MWTyper extends Component {
     private _label: Label = new Label();
     private _defaultString: string = '';
     private _scheduleCount: number = 0;
+    private _audioSource: AudioSource = new AudioSource();
 
     start() {
         this._init();
@@ -17,6 +19,11 @@ export class MWTyper extends Component {
 
     private _init() {
         this._changeLayer();
+        this._initAudioSource();
+    }
+
+    private _initAudioSource() {
+        this._audioSource = this.node.getComponent(AudioSource);
     }
 
     private _changeLayer() {
@@ -31,6 +38,7 @@ export class MWTyper extends Component {
         this._defaultString = this._label.string;
         this._label.string = '';
 
+        this._audioSource.play();
         this.schedule(this._typing, 
                     this.typeInterval, 
                     this._defaultString.length-1);
@@ -48,5 +56,9 @@ export class MWTyper extends Component {
     private _typing () {
         this._label.string += this._defaultString[this._scheduleCount];
         this._scheduleCount++;
+
+        if (this._scheduleCount == this._defaultString.length-1) {
+            this._audioSource.stop();
+        }
     }
 }

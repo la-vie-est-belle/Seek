@@ -2,14 +2,16 @@ export default {
     levels: [
         // level 1
         {   
-            tip: '一生二，二生三，三生万物。',
-            answer: '123',
+            intro: '欢迎来到第一关，在限定时间内，前往坐标为2-2-2的方块。',
+            tip: '坐标2-2-2',
+            answer: '',
             playerStartPos: [0, 0, 0],
             targetPos: [2, 2, 2],
-            blankPos: [[]],
+            blankPos: [],
             propPos: [],
-            coinPos: [],
-            time: 1,
+            upPos: [[2, 0, 2], [0, 1, 0]],
+            downPos: [[1, 1, 2], [2, 2, 0]],
+            time: 2,
             cubeGap: 4,
             lengthNum: 3,
             widthNum: 3,

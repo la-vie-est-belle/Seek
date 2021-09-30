@@ -7,6 +7,9 @@ export class Util extends Component {
     @property({ type: AudioClip })
     btnAudio: AudioClip = new AudioClip();
 
+    @property({type: Node})
+    timeProgressBar: Node = null!;
+
     audioSource: AudioSource = new AudioSource();
 
     start () {
@@ -28,5 +31,9 @@ export class Util extends Component {
             tipLabel.active = true;
             this.audioSource.playOneShot(this.btnAudio);
         }
+    }
+
+    startCountDown() {
+        this.timeProgressBar.active = true;
     }
 }
